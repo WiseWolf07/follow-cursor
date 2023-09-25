@@ -13,15 +13,8 @@ const FollowMouse = () => {
       setPosition({ x: clientX, y: clientY })
     }
 
-    const handleMoven = () => {
-      setPosition({x: 0, y: 0})
-    }
-
     if (enabled) {
       window.addEventListener('pointermove', handleMove)
-    }
-    else{
-      window.addEventListener('pointermove', handleMoven)
     }
 
     // cleanup:
